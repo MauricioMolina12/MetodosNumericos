@@ -27,38 +27,38 @@ public class EliminacionGauss {
 
         M = new double[n][m + 1];
 
-        for (int i = 1; i < n; i++) {
-            for (int j = 1; j <= m; j++) {
-                System.out.print("\n Digite número en la posición[" + i + "," + j + "]:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= m; j++) {
+                System.out.print("\n Digite número en la posicion[" + (i+1) + "," + (j+1) + "]:");
                 M[i][j] = read.nextDouble();
             }
         }
 
         System.out.println("Matriz generada");
-        for (int i = 1; i < n; i++) {
-            for (int j = 1; j <= m; j++) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= m; j++) {
                 System.out.print("\t" + M[i][j]);
             }
             System.out.println("\n");
         }
 
-        for (int i = 1; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             double div = M[i][i];
-            for (int j = 1; j <= m; j++) {
+            for (int j = 0; j <= m; j++) {
                 M[i][j] /= div;
             }
 
             for (int k = i + 1; k < n; k++) {
                 double pv = (-1) * M[k][i];
-                for (int j = 1; j <= m; j++) {
+                for (int j = 0; j <= m; j++) {
                     M[k][j] = pv * M[i][j] + M[k][j];
                 }
             }
         }
 
         System.out.println("Matriz resultante");
-        for (int i = 1; i < n; i++) {
-            for (int j = 1; j <= m; j++) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= m; j++) {
                 System.out.print("\t" + M[i][j]);
             }
             System.out.println("\n");
