@@ -93,7 +93,7 @@ public class GAUSS {
 
         for (int c = 0; c < m; c++) {
             if (c != f && c!= f+1) {
-                valor_ant += M[f][c];
+                valor_ant += M[f][c] * V[c];
             }
         }
         valor_ant = M[f][m] - valor_ant;
