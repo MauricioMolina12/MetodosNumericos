@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Mauro
+ * @author User
  */
 public class GAUSS {
 
@@ -28,9 +28,6 @@ public class GAUSS {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <= m; j++) {
                 System.out.print("\n Digite número en la posición[" + (i + 1) + "," + (j + 1) + "]:");
-
-                System.out.print("\n Digite número en la posicion[" + (i+1) + "," + (j+1) + "]:");
-
                 M[i][j] = read.nextDouble();
             }
         }
