@@ -13,7 +13,9 @@ import java.util.Scanner;
 public class GAUSS {
 
     static int m, n;
-    static double[][] M;
+    static double[][] M;  
+    static double[] V;
+
 
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
@@ -69,7 +71,7 @@ public class GAUSS {
 
         // System.out.println("x1 = " + x1 + "     x2 = " + x2 + "     x3 = " + x3 + "     x4 = " + x4);
 
-        double [] V = new double [m];
+        V = new double [m];
 
         for (int v = m-1; v >= 0 ; v--) {
             if (v == m-1) {
